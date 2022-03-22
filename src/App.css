@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+html{
+  background-color:violet;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto:ital,wght@0,300;1,400&display=swap');
+.title{
+  color: crimson;
+  text-align: center;
+  font-family: 'Inspiration', cursive;
+
+}
+button{
+  border-radius: 20px;
+  background-color: transparent;
+  color: aliceblue;
+
+}
+button:hover{
+  color: crimson;
+}
+img{
+  width: 200px;
+  height: 200px;
+
+}

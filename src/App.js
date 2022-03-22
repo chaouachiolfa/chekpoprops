@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Profil from './Profil/Profil';
+import image from './Assets/olfa.jpg';
+import {PropTypes} from 'prop-types';
 function App() {
+  let handlClick=()=>{
+    alert('olfa alert')
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Profil fullName="olfa" bio="react" profission="devloper" handlClick={handlClick}> 
+    <img src = {image} alt='img'/>
+    
+    </Profil>
+
     </div>
   );
 }
 
 export default App;
+Profil.defaultProps={
+  address:"beja",tel : 990454544
+  
+}
+Profil.propTypes = {tel : PropTypes.number
+
+}
